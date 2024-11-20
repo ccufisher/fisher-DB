@@ -32,14 +32,14 @@ def create_tables():
     # 建立fishman表
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS fishman (
-        crew_number INT PRIMARY KEY NOT NULL,
-        name VARCHAR(100) NOT NULL,
-        photo BLOB,
-        country_of_citizenship VARCHAR(100),
-        passport_number INT,
-        age INT,
-        working_hours INT DEFAULT 0,
-        branch_id INT,
+        `crew_number` INT PRIMARY KEY NOT NULL, 
+        `name` VARCHAR(100) NOT NULL,
+        `photo` BLOB,
+        `country_of_citizenship` VARCHAR(100),
+        `passport_number` VARCHAR(20),
+        `age` INT,
+        `working_hours` INT DEFAULT 0,
+        `branch_id` INT,
         FOREIGN KEY (branch_id) REFERENCES branch(branch_id) ON DELETE SET NULL
     )
     """)

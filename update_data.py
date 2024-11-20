@@ -1,25 +1,15 @@
 import mysql.connector
 
-connection = mysql.connector.connect(host='localhost',
-                                    port='3306',
-                                    user='root',
-                                    password='password',
-                                    database='sql_tutorial')
-
-cursor = connection.cursor()
-
-# 新增
-# cursor.execute("INSERT INTO `branch` VALUES(5, 'qq', NULL)")
-
-
-# 修改
-# cursor.execute('UPDATE `branch` SET `manager_id` = 206 WHERE `branch_id` = 4;')
-
-
-# 刪除
-# cursor.execute("DELETE FROM `branch` WHERE `branch_id` = 5;")
-
-
-cursor.close()
-connection.commit()
-connection.close()
+# 區塊功能：更新工作時數
+def update_working_hours(crew_number, hours):
+    connection = mysql.connector.connect(
+        host="127.0.0.1",
+        user="root",
+        password="P@ssw0rd",
+        database="fisher_records"
+    )
+    cursor = connection.cursor()
+    sql = "UPDATE fishman SET working_hours = working_hours + %s WHERE crew_number = %s"
+    cursor.execute(sql, (hours, crew_number))
+    connection.commit()
+    connection.close()

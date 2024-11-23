@@ -36,7 +36,7 @@ CREATE TABLE `work_hours` (
     `timeEnd` FLOAT NOT NULL, -- 結束時刻，單位: 小時
     `duration` FLOAT GENERATED ALWAYS AS (timeEnd - timeStart) STORED, -- 時長，根據 timeStart 和 timeEnd 自動計算
     `comments` VARCHAR(255), -- 備註，儲存身體狀態或加班等描述
-    PRIMARY KEY (`worker_id`, date, `timeStart`), -- Compound Key，避免同一天、同時間重複記錄
+    PRIMARY KEY (`worker_id`, `date`, `timeStart`), -- Compound Key，避免同一天、同時間重複記錄
     FOREIGN KEY (`worker_id`) REFERENCES `crew_members`(`worker_id`) -- 連結到`crew_members`表中的`worker_id`
     ON DELETE CASCADE -- 當對應的漁工刪除時，刪除相關工作時數記錄
 );

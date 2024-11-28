@@ -50,7 +50,6 @@ SELECT * FROM `user_login`;
 SELECT * FROM `crew_members`;
 SELECT * FROM `work_hours`;
 
-DROP TABLE `fishman`;
 DROP TABLE `user_login`;
 DROP TABLE `crew_members`;
 DROP TABLE `work_hours`;

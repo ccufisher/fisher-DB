@@ -12,7 +12,11 @@
 
 ## testfile
 1. 把fishman_db_design中最後面的drop table/database都註解掉
-維持database開啟中的狀態
+   維持database開啟中的狀態
 2. 執行test file即可看見資料庫的輸出
 
 ### 需要注意的部分:
+1. photo在輸出時會顯示BOLB而非圖片本身
+   為SQL用於存儲二進制數據（例如圖片、文件等）的數據類型
+2. 目前還沒辦法測試上次登入時間和登入失敗次數
+   因為那些功能可能要與後端的程式做整合後才能實行

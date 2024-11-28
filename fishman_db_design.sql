@@ -6,7 +6,7 @@ CREATE TABLE `crew_members` (
     `worker_id` INT PRIMARY KEY, -- 員工編號，船長為0
     `given_name` VARCHAR(50) NOT NULL, -- 名
     `family_name` VARCHAR(50) NOT NULL, -- 姓
-    `photo` BLOB, -- 照片
+    `photo` MEDIUMBLOB, -- 照片
     `age` INT CHECK (age > 0 AND age <= 120), -- 年齡，正數，合理範圍1~120
     `country` VARCHAR(100) NOT NULL, -- 國籍
     `passport_number` VARCHAR(20) UNIQUE NOT NULL, -- 護照號碼，需唯一，最多20字

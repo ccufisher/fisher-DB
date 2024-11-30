@@ -71,7 +71,7 @@ CREATE TABLE `report`(
     `check` TINYINT(1) NOT NULL, -- 狀態確認
     `worker_id` INT NOT NULL, -- 員工編號
     `data` DATE NOT NULL, -- 日期
-    `issue_description` TEXT NOT NULL, -- 詳細問題描述
+    `issue_description` TEXT NOT NULL -- 詳細問題描述
 );
 
 DESCRIBE `user_login`;

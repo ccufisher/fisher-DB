@@ -69,11 +69,9 @@ CREATE TABLE `notification` (
 CREATE TABLE `report`(
 	`report_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY, -- 自動產生編號check
     `check` TINYINT(1) NOT NULL, -- 狀態確認
-    `worker_id` INT UNIQUE NOT NULL, -- 員工編號
+    `worker_id` INT NOT NULL, -- 員工編號
     `data` DATE NOT NULL, -- 日期
     `issue_description` TEXT NOT NULL, -- 詳細問題描述
-    FOREIGN KEY (`worker_id`) REFERENCES `crew_members`(`worker_id`) -- 連結到`crew_members`表中的`worker_id`
-    ON DELETE CASCADE
 );
 
 DESCRIBE `user_login`;

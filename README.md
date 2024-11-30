@@ -8,7 +8,8 @@
 ![user_login](https://github.com/user-attachments/assets/c52efd12-3191-4470-8b03-0df023cc067e)
 
 ## 登記時數 `work_hours`
-![work_hours](https://github.com/user-attachments/assets/6abfca83-33dc-41af-8798-152a7ce606e5)
+![work_hours](https://github.com/user-attachments/assets/354f84fb-b52c-4d20-8c61-72ddda2abf51)
+
 
 ## 通知表 ‵notification`
 ![notification](https://github.com/user-attachments/assets/92ae554a-2b54-4e2f-956a-d58f3d4e9e58)

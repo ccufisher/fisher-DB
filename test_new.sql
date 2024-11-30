@@ -32,7 +32,8 @@ VALUES ('Worker Tuang Hee has worked overtime for 100 hours on 12/27/2024', 'Rem
 -- 測試 report 表格
 INSERT INTO `report` (`check`, `worker_id`, `date`, `issue_description`)
 VALUES (1, 1, '2024-11-27', 'wrong working time'),
-       (0, 2, '2024-11-25', 'Error in meal time registration');
+       (0, 2, '2024-11-25', 'Error in meal time registration'),
+       (0, 1, '2024-11-27', 'wrong working time');
 
 -- 檢查 work_hours 表格資料是否插入成功
 SELECT * FROM `work_hours`;

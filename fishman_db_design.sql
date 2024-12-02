@@ -93,5 +93,5 @@ DROP TABLE `user_login`;
 DROP TABLE `work_hours`;
 DROP TABLE `crew_members`;
 DROP TABLE `notification`;
-DROP TABLE `report`
+DROP TABLE `report`;
 DROP DATABASE `fisherman_records`;

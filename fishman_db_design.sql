@@ -1,6 +1,6 @@
-CREATE DATABASE `fisherman_records`;
+CREATE DATABASE `fisherman`;
 SHOW DATABASES;
-USE `fisherman_records`;
+USE `fisherman`;
 
 CREATE TABLE `crew_members` (
     `worker_id` INT PRIMARY KEY, -- 員工編號，船長為0
@@ -94,4 +94,4 @@ DROP TABLE `work_hours`;
 DROP TABLE `crew_members`;
 DROP TABLE `notification`;
 DROP TABLE `report`;
-DROP DATABASE `fisherman_records`;
+DROP DATABASE `fisherman`;

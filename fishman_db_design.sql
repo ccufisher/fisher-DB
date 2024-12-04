@@ -30,7 +30,7 @@ CREATE TABLE `user_login` (
 CREATE TABLE `work_hours` (
     `worker_id` INT NOT NULL, -- 員工編號
     `date` DATE NOT NULL, -- 日期
-    `status` VARCHAR(20), -- 狀態，0=休息, 1=工作, 2=吃飯
+    `status` VARCHAR(50), -- 狀態，0=休息, 1=工作, 2=吃飯
     `duration` INT NOT NULL, -- 時長，幾個半小時
     `profilePhoto` MEDIUMBLOB NOT NULL, -- 大頭照
     `signaturePhoto` MEDIUMBLOB NOT NULL, -- 簽名照片
